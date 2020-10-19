@@ -28,18 +28,34 @@
   </head>
   <body>
     <header>
+      <div class="container_small">
+
+      <img src="#" alt="LOGO">
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Prodotti</li>
+          <li>News</li>
+
+        </ul>
+      </nav>
+    </div>
 
     </header>
     <main>
-      <div class="jumbo-container">
-        <div class="container-medium">
+      <div class="container_fluid">
+        <div class="container_medium">
           <h2>Lunga</h2>
           <ul>
 
           @foreach ($lunga as $prodotto)
             <li>
               <img src="{{$prodotto["src"]}}" alt="">
-              <h3>{{$prodotto["titolo"]}}</h3>
+              <div class="info">
+                <h3>{{$prodotto["titolo"]}}</h3>
+                <p> <strong>{{$prodotto["cottura"]}}</strong></p>
+                <p>{{$prodotto["peso"]}}</p>
+              </div>
             </li>
           @endforeach
         </ul>
@@ -49,7 +65,12 @@
         @foreach ($corta as $prodotto)
           <li>
             <img src="{{$prodotto["src"]}}" alt="">
-            <h3>{{$prodotto["titolo"]}}</h3>
+
+            <div class="info">
+              <h3>{{$prodotto["titolo"]}}</h3>
+              <p> <strong>{{$prodotto["cottura"]}}</strong></p>
+              <p>{{$prodotto["peso"]}}</p>
+            </div>
           </li>
         @endforeach
       </ul>
@@ -59,7 +80,11 @@
       @foreach ($cortissima as $prodotto)
         <li>
           <img src="{{$prodotto["src"]}}" alt="">
-          <h3>{{$prodotto["titolo"]}}</h3>
+          <div class="info">
+            <h3>{{$prodotto["titolo"]}}</h3>
+            <p> <strong>{{$prodotto["cottura"]}}</strong></p>
+            <p>{{$prodotto["peso"]}}</p>
+          </div>
         </li>
       @endforeach
     </ul>
