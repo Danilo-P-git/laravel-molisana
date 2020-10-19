@@ -1,0 +1,14 @@
+.jumbo-container {
+  width: 100%;
+  .container-medium{
+    width: 50%;
+    margin: auto;
+    background-color: red;
+    ul{
+      display: flex;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}

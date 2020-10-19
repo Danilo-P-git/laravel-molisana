@@ -7,11 +7,14 @@
   $cortissima = [];
   foreach ($data as $prodotto) {
     if ($prodotto["tipo"] == "lunga") {
-      $lunga = $prodotto;
+      $lunga[] = $prodotto;
+
     } elseif ($prodotto["tipo"] == "corta") {
-      $corta = $prodotto;
+      $corta[] = $prodotto;
+
     } elseif ($prodotto["tipo"] == "cortissima") {
-      $cortissima = $prodotto;
+      $cortissima[] = $prodotto;
+
     }
   }
 @endphp
@@ -35,7 +38,7 @@
 
           @foreach ($lunga as $prodotto)
             <li>
-              <img src="{{$prodotto['src'] }}" alt="">
+              <img src="{{$prodotto["src"]}}" alt="">
               <h3>{{$prodotto["titolo"]}}</h3>
             </li>
           @endforeach
