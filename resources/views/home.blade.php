@@ -30,7 +30,7 @@
 
 @section('mainContent')
   <main>
-  <div class="container_fluid">
+  <div class="container_fluid  background-img">
   <div class="container_medium">
   <h2>Lunga</h2>
   <ul>
@@ -44,45 +44,45 @@
   <h3>{{$prodotto["titolo"]}}</h3></a>
   <p> <strong>{{$prodotto["cottura"]}}</strong></p>
   <p>{{$prodotto["peso"]}}</p>
-</div>
+  </div>
 
-</li>
-@endforeach
-</ul>
-<h2>corta</h2>
-<ul>
+  </li>
+  @endforeach
+  </ul>
+  <h2>corta</h2>
+  <ul>
 
-@foreach ($corta as $prodotto)
-<li>
-<img src="{{$prodotto["src"]}}" alt="">
-<div class="info">
-<a href="prodotto/show/{{"id"}}">
-<h3>{{$prodotto["titolo"]}}</h3></a>
-<p> <strong>{{$prodotto["cottura"]}}</strong></p>
-<p>{{$prodotto["peso"]}}</p>
-</div>
+  @foreach ($corta as $prodotto)
+  <li>
+  <img src="{{$prodotto["src"]}}" alt="">
+  <div class="info">
+  <a href="prodotto/show/{{"id"}}">
+  <h3>{{$prodotto["titolo"]}}</h3></a>
+  <p> <strong>{{$prodotto["cottura"]}}</strong></p>
+  <p>{{$prodotto["peso"]}}</p>
+  </div>
 
-</li>
-@endforeach
-</ul>
-<h2>cortissima</h2>
-<ul>
+  </li>
+  @endforeach
+  </ul>
+  <h2>cortissima</h2>
+  <ul>
 
-@foreach ($cortissima as $prodotto)
-<li>
-<img src="{{$prodotto["src"]}}" alt="">
-<div class="info">
-<a href="prodotto/show/{{"id"}}">
-<h3>{{$prodotto["titolo"]}}</h3></a>
-<p> <strong>{{$prodotto["cottura"]}}</strong></p>
-<p>{{$prodotto["peso"]}}</p>
-</div>
+  @foreach ($cortissima as $prodotto)
+  <li>
+  <img src="{{$prodotto["src"]}}" alt="">
+  <div class="info">
+  <a href="prodotto/show/{{"id"}}">
+  <h3>{{$prodotto["titolo"]}}</h3></a>
+  <p> <strong>{{$prodotto["cottura"]}}</strong></p>
+  <p>{{$prodotto["peso"]}}</p>
+  </div>
 
-</li>
-@endforeach
-</ul>
-</div>
-</div>
+  </li>
+  @endforeach
+  </ul>
+  </div>
+  </div>
   </main>
 
 @endsection

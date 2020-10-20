@@ -20,48 +20,70 @@
   margin: auto;
 }
 
-.container_fluid {
-  width: 100%;
-}
-
 .debug {
   background-color: red;
   border: 1px solid blue;
   height: 200px;
 }
 
-.container_small nav ul {
+.container_fluid .logo-wrapper {
+  width: 20%;
+  margin: auto;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.container_fluid .logo-wrapper img {
+  width: 100%;
+}
+
+.container_fluid nav {
+  background-color: red;
+}
+
+.container_fluid nav ul {
   display: flex;
   list-style: none;
   justify-content: center;
 }
 
-.container_small nav ul li {
+.container_fluid nav ul li {
   padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
-.container_small nav ul li a {
+.container_fluid nav ul li:hover {
+  background-color: blue;
+}
+
+.container_fluid nav ul li a {
   text-decoration: none;
   color: #000;
 }
 
-.container_medium ul {
+main {
+  background-image: url("/images/fondo-pag-speciali.jpg");
+}
+
+main .container_medium ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
 
-.container_medium ul li {
+main .container_medium ul li {
   position: relative;
   margin: 10px;
   width: calc(33% - 20px);
 }
 
-.container_medium ul li img {
+main .container_medium ul li img {
   width: 100%;
 }
 
-.container_medium ul li .info {
+main .container_medium ul li .info {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -74,7 +96,7 @@
   transition: opacity 0.5s;
 }
 
-.container_medium ul li:hover .info {
+main .container_medium ul li:hover .info {
   opacity: 1;
 }
 

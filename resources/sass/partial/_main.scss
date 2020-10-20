@@ -1,31 +1,35 @@
-.container_medium {
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    li {
-      position: relative;
-      margin: 10px;
-      width: calc(33% - 20px);
-      img {
-        width: 100%;
-      }
-      .info {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        width: 100%;
-        height: 100%;
-        background-color: red;
-        opacity: 0;
-        transition: opacity 0.5s;
-      }
-      &:hover .info {
-        opacity: 1;
-      }
-    }
+main {
+  background-image: url("/images/fondo-pag-speciali.jpg");
 
+  .container_medium {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      li {
+        position: relative;
+        margin: 10px;
+        width: calc(33% - 20px);
+        img {
+          width: 100%;
+        }
+        .info {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          width: 100%;
+          height: 100%;
+          background-color: red;
+          opacity: 0;
+          transition: opacity 0.5s;
+        }
+        &:hover .info {
+          opacity: 1;
+        }
+      }
+
+    }
   }
 }

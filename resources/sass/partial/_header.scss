@@ -1,11 +1,27 @@
-.container_small{
+.container_fluid{
+  .logo-wrapper {
+    width: 20%;
+    margin: auto;
+    height: 200px;
+    margin-top: 20px;
+    img {
+      width: 100%
+    }
+  }
   nav {
+    background-color: red;
     ul {
       display: flex;
       list-style: none;
       justify-content: center;
       li {
         padding: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+        &:hover {
+          background-color: blue;
+        }
         a {
           text-decoration: none;
           color: #000;
