@@ -127,41 +127,44 @@
   opacity: 0.6;
 }
 
-footer .container_medium {
+.footer-bg {
+  background-image: url("/images/footer-montagne-bottom.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.footer-bg .container_medium .row-footer {
+  padding-top: 50px;
+  padding-bottom: 150px;
   display: flex;
-  justify-content: space-around;
+  color: #616161;
+}
+
+.footer-bg .container_medium .row-footer .col-footer {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+.footer-bg .container_medium .row-footer .col-footer img {
+  width: 70%;
   padding-bottom: 20px;
 }
 
-footer .container_medium ul {
+.footer-bg .container_medium .row-footer .col-footer h2 {
+  padding-bottom: 10px;
+}
+
+.footer-bg .container_medium .row-footer .col-footer ul {
   list-style: none;
 }
 
-footer .container_medium ul li {
-  padding: 5px;
-  font-size: 13px;
+.footer-bg .container_medium .row-footer .col-footer ul li {
+  padding: 5px 0px;
+  cursor: pointer;
 }
 
-footer .container_medium ul li:hover {
-  text-decoration: underline;
-}
-
-footer .container_medium ul li:first-child {
-  font-size: 14px;
-  font-weight: 500;
-}
-
-footer .container_medium ul li:first-child:hover {
-  text-decoration: none;
-}
-
-footer .container_medium ul li:first-child:hover a {
-  text-decoration: none;
-  cursor: default;
-}
-
-footer .container_medium ul li a {
-  text-decoration: none;
+.footer-bg .container_medium .row-footer .col-footer ul li:hover {
   color: #000;
 }
 
