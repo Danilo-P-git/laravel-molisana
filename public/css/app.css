@@ -27,18 +27,14 @@
 }
 
 .container_fluid .logo-wrapper {
-  width: 20%;
+  width: 15%;
   margin: auto;
-  height: 200px;
+  height: 150px;
   margin-top: 20px;
 }
 
 .container_fluid .logo-wrapper img {
   width: 100%;
-}
-
-.container_fluid nav {
-  background-color: red;
 }
 
 .container_fluid nav ul {
@@ -48,14 +44,17 @@
 }
 
 .container_fluid nav ul li {
+  margin-top: 10px;
   padding: 20px;
   margin-left: 10px;
   margin-right: 10px;
   cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .container_fluid nav ul li:hover {
-  background-color: blue;
+  background-color: #b6dbe4;
 }
 
 .container_fluid nav ul li a {
@@ -63,27 +62,39 @@
   color: #000;
 }
 
-main {
+.background-img {
   background-image: url("/images/fondo-pag-speciali.jpg");
 }
 
-main .container_medium ul {
+.background-img .container_medium h2 {
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #002d73;
+  padding: 20px 0px;
+}
+
+.background-img .container_medium .space {
+  padding-top: 50px;
+}
+
+.background-img .container_medium ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
 
-main .container_medium ul li {
+.background-img .container_medium ul li {
   position: relative;
   margin: 10px;
   width: calc(33% - 20px);
 }
 
-main .container_medium ul li img {
+.background-img .container_medium ul li img {
   width: 100%;
 }
 
-main .container_medium ul li .info {
+.background-img .container_medium ul li .info {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -91,13 +102,29 @@ main .container_medium ul li .info {
   text-align: center;
   width: 100%;
   height: 100%;
-  background-color: red;
+  background-color: #6fa5c0;
   opacity: 0;
   transition: opacity 0.5s;
 }
 
-main .container_medium ul li:hover .info {
-  opacity: 1;
+.background-img .container_medium ul li .info a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.background-img .container_medium ul li .info a h3 {
+  margin-top: 60px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding: 0px 60px;
+}
+
+.background-img .container_medium ul li .info img {
+  width: 30px;
+}
+
+.background-img .container_medium ul li:hover .info {
+  opacity: 0.6;
 }
 
 footer .container_medium {

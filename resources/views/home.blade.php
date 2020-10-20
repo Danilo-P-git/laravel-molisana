@@ -32,7 +32,7 @@
   <main>
   <div class="container_fluid  background-img">
   <div class="container_medium">
-  <h2>Lunga</h2>
+  <h2  class="space">le lunghe</h2>
   <ul>
 
   @foreach ($lunga as $prodotto)
@@ -42,14 +42,13 @@
   <a href="prodotto/show/{{$prodotto["id"]}}">
 
   <h3>{{$prodotto["titolo"]}}</h3></a>
-  <p> <strong>{{$prodotto["cottura"]}}</strong></p>
-  <p>{{$prodotto["peso"]}}</p>
+  <img src="{{asset('images/icon.svg')}}" alt="">
   </div>
 
   </li>
   @endforeach
   </ul>
-  <h2>corta</h2>
+  <h2>le corte</h2>
   <ul>
 
   @foreach ($corta as $prodotto)
@@ -58,14 +57,14 @@
   <div class="info">
   <a href="prodotto/show/{{"id"}}">
   <h3>{{$prodotto["titolo"]}}</h3></a>
-  <p> <strong>{{$prodotto["cottura"]}}</strong></p>
-  <p>{{$prodotto["peso"]}}</p>
+  <img src="{{asset('images/icon.svg')}}" alt="">
+
   </div>
 
   </li>
   @endforeach
   </ul>
-  <h2>cortissima</h2>
+  <h2>le cortissime</h2>
   <ul>
 
   @foreach ($cortissima as $prodotto)
@@ -74,8 +73,8 @@
   <div class="info">
   <a href="prodotto/show/{{"id"}}">
   <h3>{{$prodotto["titolo"]}}</h3></a>
-  <p> <strong>{{$prodotto["cottura"]}}</strong></p>
-  <p>{{$prodotto["peso"]}}</p>
+  <img src="{{asset('images/icon.svg')}}" alt="">
+
   </div>
 
   </li>

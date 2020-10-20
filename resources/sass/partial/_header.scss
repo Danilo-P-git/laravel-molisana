@@ -1,26 +1,29 @@
+@import "partial/_variable";
 .container_fluid{
   .logo-wrapper {
-    width: 20%;
+    width: 15%;
     margin: auto;
-    height: 200px;
+    height: 150px;
     margin-top: 20px;
     img {
       width: 100%
     }
   }
   nav {
-    background-color: red;
     ul {
       display: flex;
       list-style: none;
       justify-content: center;
       li {
+        margin-top: 10px;
         padding: 20px;
         margin-left: 10px;
         margin-right: 10px;
         cursor: pointer;
+        font-size: 20px;
+        font-weight: 600;
         &:hover {
-          background-color: blue;
+          background-color: $mainColor;
         }
         a {
           text-decoration: none;
