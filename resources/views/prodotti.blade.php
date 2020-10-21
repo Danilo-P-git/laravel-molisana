@@ -55,7 +55,7 @@
   <li>
   <img src="{{$prodotto["src"]}}" alt="">
   <div class="info">
-  <a href="prodotti/show/{{"id"}}">
+  <a href="prodotti/show/{{$prodotto["id"]}}">
   <h3>{{$prodotto["titolo"]}}</h3></a>
   <img src="{{asset('images/icon.svg')}}" alt="">
 
@@ -71,7 +71,7 @@
   <li>
   <img src="{{$prodotto["src"]}}" alt="">
   <div class="info">
-  <a href="prodotti/show/{{"id"}}">
+  <a href="prodotti/show/{{$prodotto["id"]}}">
   <h3>{{$prodotto["titolo"]}}</h3></a>
   <img src="{{asset('images/icon.svg')}}" alt="">
 

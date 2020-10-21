@@ -5,10 +5,17 @@
 @endsection
 
 @section('mainContent')
-  <h1>{{$data["titolo"]}}</h1>
-  <img src="{{$data["src-h"]}}" alt="">
-  <img src="{{$data["src-p"]}}" alt="">
-  <p>
-    {{!!$data["descrizione"]!!}}
-  </p>
+  <main class="detail">
+    <div class="cont-img">
+      <h1>{{$data["titolo"]}}</h1>
+      <img class="upper" src="{{$data["src-h"]}}" alt="">
+      <img class="under" src="{{$data["src-p"]}}" alt="">
+      <div class="desc container_medium">
+        <p>
+          {!!$data["descrizione"]!!}
+        </p>
+    </div>
+
+    </div>
+  </main>
 @endsection

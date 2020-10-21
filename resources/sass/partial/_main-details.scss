@@ -1,0 +1,31 @@
+@import "partial/_variable";
+.detail {
+  .cont-img {
+    width: 100%;
+    background-color: #b8dae6;
+    margin-bottom: 30px;
+    h1 {
+      font-size: 35px;
+      top: 2%;
+      left: 38%;
+      text-align: center;
+      padding-bottom: 20px;
+      padding-top: 30px;
+      color: $secondColor;
+    }
+    img {
+      display: block;
+      width: 60%;
+      margin: auto;
+      height: 120%;
+    }
+    .desc {
+      line-height: 1.6;
+      p {
+        font-size: 22px;
+        color: $secondColor;
+        padding-bottom: 30px;
+      }
+    }
+  }
+}

@@ -24,7 +24,7 @@ Route::get('/prodotti', function () {
 })-> name('prodotti');
 
 Route::get('/prodotti/show/{id}', function ($id) {
-  $prodotto = config('pasta.$id');
+  $prodotto = config("pasta.$id");
   return view('prodotti-single', ["data" => $prodotto]);
 });
 
