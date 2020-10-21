@@ -16,9 +16,22 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 })-> name('home');
+
+
+
 Route::get('/prodotti', function () {
-    return view('prodotti');
+  $data = config('pasta');
+  $paste = [];
+  foreach ($data as $key => $prodotto) {
+    $prodotto["id"] = $key;
+    $paste[$prodotto["tipo"]][] = $prodotto;
+  }
+    return view('prodotti', $paste);
 })-> name('prodotti');
+
+
+
+
 Route::get('/news', function () {
     return view('news');
 })-> name('news');
