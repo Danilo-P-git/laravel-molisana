@@ -1,3 +1,27 @@
+@php
+
+  $data = config('pasta');
+
+  $lunga = [];
+  $corta = [];
+  $cortissima = [];
+
+  foreach ($data as $key => $prodotto) {
+    $prodotto["id"] = $key;
+
+    if ($prodotto["tipo"] == "lunga") {
+      $lunga[$key] = $prodotto;
+
+    } elseif ($prodotto["tipo"] == "corta") {
+      $corta[$key] = $prodotto;
+
+    } elseif ($prodotto["tipo"] == "cortissima") {
+      $cortissima[$key] = $prodotto;
+
+    }
+  }
+@endphp
+
 @extends('layouts.main')
 
 @section('title')
@@ -15,7 +39,7 @@
   <li>
   <img src="{{$prodotto["src"]}}" alt="">
   <div class="info">
-  <a href="prodotto/show/{{$prodotto["id"]}}">
+  <a href="prodotti/show/{{$prodotto["id"]}}">
 
   <h3>{{$prodotto["titolo"]}}</h3></a>
   <img src="{{asset('images/icon.svg')}}" alt="">
@@ -31,7 +55,7 @@
   <li>
   <img src="{{$prodotto["src"]}}" alt="">
   <div class="info">
-  <a href="prodotto/show/{{"id"}}">
+  <a href="prodotti/show/{{"id"}}">
   <h3>{{$prodotto["titolo"]}}</h3></a>
   <img src="{{asset('images/icon.svg')}}" alt="">
 
@@ -47,7 +71,7 @@
   <li>
   <img src="{{$prodotto["src"]}}" alt="">
   <div class="info">
-  <a href="prodotto/show/{{"id"}}">
+  <a href="prodotti/show/{{"id"}}">
   <h3>{{$prodotto["titolo"]}}</h3></a>
   <img src="{{asset('images/icon.svg')}}" alt="">
 

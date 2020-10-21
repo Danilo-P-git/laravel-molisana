@@ -20,16 +20,13 @@ Route::get('/', function () {
 
 
 Route::get('/prodotti', function () {
-  $data = config('pasta');
-  $paste = [];
-  foreach ($data as $key => $prodotto) {
-    $prodotto["id"] = $key;
-    $paste[$prodotto["tipo"]][] = $prodotto;
-  }
-    return view('prodotti', $paste);
+    return view('prodotti');
 })-> name('prodotti');
 
-
+Route::get('/prodotti/show/{id}', function ($id) {
+  $prodotto = config('pasta.$id');
+  return view('prodotti-single', ["data" => $prodotto]);
+});
 
 
 Route::get('/news', function () {
