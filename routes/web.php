@@ -24,8 +24,19 @@ Route::get('/prodotti', function () {
 })-> name('prodotti');
 
 Route::get('/prodotti/show/{id}', function ($id) {
+
+  function not_null($value) {
+      return (config("pasta.$value") != null) ? $value : false;
+}
+  $next_product = not_null($id + 1);
+  $prev_product = not_null($id - 1);
   $prodotto = config("pasta.$id");
-  return view('prodotti-single', ["data" => $prodotto]);
+  $data = [
+    "product"=> $prodotto,
+    "prev"=> $prev_product,
+    "next"=> $next_product,
+  ];
+  return view('prodotti-single', $data);
 });
 
 
